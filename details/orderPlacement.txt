@@ -1,0 +1,12 @@
+Order placement process:
+
+1. We have some list of products in our stock
+2. A customer looks to the product list, and adds a product into cart.
+3. We will store the product the user wants to buy in the localstorage.
+4. We then pull the products from the local storage and put them into the cart of the user.
+5. Then user goes to cart and clicks on make payment, then we will connect to the external server for the payment (Stripe) and 
+the product will be created in the database.
+6. At this point the connection between the application server and Stripe will be lost.
+7. Since it may take time for the payment to get completed, so we need o update the app that the payment was done and order has been placed.
+8. For this we require a webhook, that tells the app that the payment has been successfully processed.
+9. Then the order is updated.

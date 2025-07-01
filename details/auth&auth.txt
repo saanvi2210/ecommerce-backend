@@ -1,0 +1,15 @@
+Methods available for authentication:
+1. Cookie based
+2. Token based
+3. Session based
+
+** here we will be using json web tokens
+
+
+Authentication : allowing a user to login into app with correct login details
+
+
+Authorisation : after a user has logged in what kind sof rights and accesses does the user has
+
+-> since the http server is stateless i does not remember the user logged in, therefore we use a json web token to make the server remember this is the user and allow all these things for him
+-> as soon as the user logs in, our server talks to a JWT server (Json we token) to generate a token and give it to user and use it later for verification

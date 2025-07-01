@@ -1,0 +1,3 @@
+MongoDB aggregation framework -> allows us to perform operations on the data
+                                 that has been stored in the mongoDB collection.
+The operations that can be performed here are grouping, sorting, projecting and filtering.
